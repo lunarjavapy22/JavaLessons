@@ -47,6 +47,44 @@ public class MainActivity extends AppCompatActivity {
         newton.name = "newton";
         System.out.println(newton.ArticleCount);
     }
+//SINIFLAR DERSİ
+    package com.example.metodlar;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        whoscientist();
+    }
+
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        System.out.println("on resume");
+    }
+    public void whoscientist(){
+        Scientists newton = new Scientists("newton","pyhsics", 50);
+        System.out.println(newton.articleCount);
+    }
+    protected void onStop() {
+        super.onStop();
+        System.out.println("On stop");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.out.println("on pause");
+    }
+
+}
 
 }
