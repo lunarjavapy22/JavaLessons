@@ -5,6 +5,7 @@
     android:id="@+id/conslay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+//Burası uygulamamızın arka planını değiştirdiğimiz bölge. Bunun dosyası ise paylaşılacaktır.
     android:background="@drawable/gradient_backround"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="81dp">
